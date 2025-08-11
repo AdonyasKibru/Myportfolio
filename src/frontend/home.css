@@ -1,5 +1,85 @@
-.homeHead {
-    color: red;
-    size: 18px;
-    margin-right: 50%;
+.fullpage {
+    width: 100%;
+    background-color: #F0EDE6;
+}
+
+.box1 {
+    width: 90%;
+    display: flex;
+    background-color: #D8E4D5;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 32px;
+    align-items: center;
+    margin: auto;
+}
+
+.box2 {
+    width: 90%;
+    display: flex;
+    background-color: #536656;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 32px;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.box3 {
+    width: 90%;
+    display: flex;
+    background-color: #D8E4D5;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 32px;
+    align-items: center;
+    margin: auto;
+}
+
+.box4 {
+    width: 90%;
+    display: flex;
+    background-color: #536656;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 32px;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.ProfilePicture {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.PersonalStatement {
+    flex: 1;
+    color: #3B4E28;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 800;
+    color: #E8D9C4;
+    margin-bottom: 16px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.p1,
+.p2,
+.p3,
+.p4 {
+    margin-bottom: 14px;
+    font-style: italic;
+    color: #F2E8C9;
 }
