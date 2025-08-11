@@ -1,28 +1,47 @@
-import React from 'react';
 import "./home.css";
-import picture from '../images/myPic.jpg';
+import React, { useState} from 'react';
+import profile from '../images/myPic.jpg';
 
 function Home() {
+
+    const [comment, setComment] = useState("");
+
+    function handleSaveComment(event){
+        event.preventDefault();
+        console.log(comment);
+    };
+
     return (
         <div className='fullpage'>
 
             <div className='spacer'></div> 
 
             <div className="box1">
-                <h1> Head</h1>
+                <div className="separator"></div>
+                <form onSubmit={handleSaveComment}>
+                    <textarea
+                        className="comment"
+                        value ={comment}
+                        placeholder="Leave me a comment."
+                        onChange={(e)=>setComment(e.target.value)}
+                    />
+                    <input type="submit" value="submit" className="custom-submit-btn"/>
+                </form>
             </div>
 
             <div className="box2">
-                {/* Image with className directly */}
-                <img src={picture} alt="Profile Picture" className="ProfilePicture" />
+                
+                <img src={profile} alt="ProfilePic" className="ProfilePic" />
 
                 <div className="PersonalStatement">
+                    
                     <h1 className='name'>ADONYAS KIBRU</h1>
-
+                    <h2 className='name2'>Backend | Frontend | Fullstack</h2>
+                    <p></p>
                     <p className='p1'>
-                      Originally from Ethiopia and now based in Kent, Washington, I graduated cum laude 
+                      Originally from Ethiopia and now based in Kent, Washington, I graduated <b>cum laude </b>
                       in June 2025 from the University of Washington Bothell with a Bachelor’s degree in
-                      Computer Science and Software Engineering, earning a 3.94 GPA. During my studies, 
+                      Computer Science and Software Engineering. During my studies, 
                       I built a strong foundation in software development and engineering principles, preparing
                       me to contribute effectively in fast-paced, innovative tech environments.
                     </p>

@@ -1,4 +1,4 @@
-/* Container for the entire header */
+
 .header-container {
   width: 100%;
   background-color: #F0EDE6;
@@ -10,7 +10,7 @@
   z-index: 1000;
 }
 
-/* Navigation box inside the header */
+
 .nav-box {
   width: 90%;
   padding: 12px 24px;
@@ -19,18 +19,18 @@
   align-items: center;
 }
 
-/* Spacer to push links to the right */
+
 .spacer {
   flex-grow: 1;
 }
 
-/* Container for the links */
+
 .link-container {
   display: flex;
   gap: 16px;
 }
 
-/* Link styles */
+
 .link {
   text-decoration: none;
   color: white;
@@ -42,12 +42,12 @@
   background-color: #CFC6B8;
 }
 
-/* Hover state for links */
+
 .link:hover {
   background-color: #42341dff;
 }
 
-/* Active (click) state for links */
+
 .link:active {
   background-color: #2f2b1d;
 }
